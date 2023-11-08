@@ -1,0 +1,110 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+/*renew*/
+body {
+    height: 100vh;
+     background: linear-gradient(90deg,#e52e71,#ff8a00);
+  
+  }
+  
+  .slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 35%;
+    top: 21%;
+    width: 500px;
+    height: 500px;
+    background: #17141d;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+  }
+  @keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
+.header img{
+    margin-left: 100px;
+    height: 50px;
+    width: 50px;
+}
+/* Form customization */
+form{
+    width: 400px;
+    height: 300px;
+    margin-top: 14%;
+    margin-left: 38%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+}
+h2{
+    padding-left: 100px;
+    padding-top: -20px;
+    color: rgb(238, 90, 90);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.label{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 30px;
+}
+form>label{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.textfild{
+    height: 30px;
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
+::placeholder{
+    padding-left: 10px;
+}
+.button{
+    height: 31px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.submit{
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.reset{
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+form>h4{
+    color: white;
+    padding-left: 100px;
+}

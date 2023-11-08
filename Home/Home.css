@@ -1,0 +1,167 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/*navigatin bar starts*/
+nav{
+    min-width: none;
+    height: 70px;
+    width: 1200px;
+    top: 60px;
+    left: 120px;
+    background-color: rgb(80, 26, 26);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    position: absolute;
+    z-index: 2;
+}
+nav img{
+    height: 80px;
+    width: 80px;
+    padding-left: 20px;
+}
+.search{
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+
+}
+.search img{
+    padding-top: 4px;
+    height: 25px;
+    width: 40px;
+}
+nav input{
+    height: 30px;
+    width: 340px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    padding-left: 17px;
+    font-size: 15px;
+}
+#navbutton{
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+}
+#navbuttonlogin{
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+}
+.navbutton_1{
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(71, 71, 216);
+}
+.navbutton_2{
+    background-color: rgb(255, 255, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 15px;
+} 
+.navbutton_3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aliceblue;
+    color: black;
+    font-size: 17px;
+}  
+nav details{
+    background-color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+}
+details>summary{
+    padding-left: 10px;
+    padding-top: 5px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+details button{
+    height: 31px;
+    width: 80px;
+    border: none;
+}
+
+/*Artical section starts */
+.navbackground{
+    height: 220px;
+    width: auto;
+    background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+    position: relative;
+}
+/*slide section*/
+  
+  .carousel {
+    width: 100vw;
+    height: 500px; /* Replaced $carousel-height with the actual value */
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  
+    &:hover .controls {
+      opacity: 1;
+    }
+  
+    .controls {
+      opacity: 0;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      justify-content: space-between;
+      width: 100%;
+      z-index: 99999;
+      transition: all 0.5s ease; /* Replaced "all ease 0.5s" with "all 0.5s ease" */
+      
+      .control {
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.7);
+        opacity: 0.5;
+        transition: 0.3s ease; /* Replaced "ease 0.3s" with "0.3s ease" */
+        cursor: pointer;
+  
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  
+    .slides {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      width: 100%;
+      transition: 2s ease-in-out all;
+  
+      .slide {
+        min-width: 100%;
+        min-height: 250px; /* Replaced $carousel-height with the actual value */
+        height: auto;
+      }
+    }
+  }
+  

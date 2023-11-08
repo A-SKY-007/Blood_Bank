@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donator_login</title>
+    <link rel="stylesheet" href="Buyer_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="password_eye.js" async></script>
+</head>
+<body>
+  <div class="slider-thumb">
+     <form action="donator_login">
+        <h2>Buyer <img src="blood-drop.png" alt="invalid"> Login</h2>
+        <br>
+        <label for="demail" class="label">Enter Email :&MediumSpace;</label><input type="text" id="demail" name="demail" placeholder="User@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="user@gmail.com" class="textfild">
+        <br><br><br>
+        <label for="Password" class="label">Password :&MediumSpace;</label><input type="password" id="password" name="password" required class="textfild" autocomplete="on">
+        <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+        <br><br><br>
+        <div class="button"> <input type="submit" class="submit"> &ThickSpace;&ThickSpace;<button type="reset" class="reset">Cancel</button></div>
+        <br><br>
+        <h4>I Don't have an account. <a href="Donator_signup.html">Signup</a></h4>
+     </form>
+  </div>
+</body>
+</html>

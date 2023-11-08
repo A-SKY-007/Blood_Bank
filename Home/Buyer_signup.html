@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer_signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="Buyer_signup.css">
+    <script src="password_eye.js" async></script>
+    <script src="Blood-flow.js" async></script>
+</head>
+<body>
+    <canvas id=c width=1920 height=1150></canvas>
+    <div class="header">
+        <a href="Home.html"><img src="lions-clubs-international-logo.svg" alt="invalid"></a>
+        <h1>SIGN UP TO BUYER</h1>
+    </div>
+    <br>
+    <form action="buyer_signup" method="get">
+        <label for="fname" class="label">Enter your First Name :&MediumSpace;</label><input type="text" maxlength="10" id="fname" name="first_name" placeholder="First_name" required class="textfild">
+        <br><br><br>
+        <label for="lname" class="label">Enter your Last Name :&MediumSpace;</label><input type="text" maxlength="10" id="lname" name="last_name" placeholder="Last_name" required class="textfild">
+        <br><br><br>
+        <label for="bmob" class="label">Enter Mobile No. :&MediumSpace;</label><input type="text" maxlength="10" id="bmob" name="bmob" placeholder="Mobile" required class="textfild">
+        <br><br><br>
+        <label for="bemail" class="label">Enter Email :&MediumSpace;</label><input type="text" id="bemail" name="bemail" placeholder="User@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="user@gmail.com" class="textfild">
+        <br><br><br>
+        <label for="bage" class="label">Enter Your Age :&MediumSpace;</label><input type="text" maxlength="2" id="bage" name="bage" placeholder="18" required class="textfild">
+        <br><br><br>
+        <label for="" class="label">Gender :&MediumSpace;</label> &ThickSpace; <input type="radio" name="bgender" id="male" value="male" required><label for="male">Male</label> &MediumSpace; <input type="radio" name="bgender" id="female" value="female" required><label for="female">Female</label>
+        <br><br><br>
+        <label for="Password" class="label">Password :&MediumSpace;</label><input type="password" id="password" name="password"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required class="textfild" autocomplete="on">
+        <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+        <br><br><br><br>
+        <input type="submit" class="submit">&ThickSpace;&ThickSpace;<button type="reset" class="reset">Cancel</button>
+        <br><br>
+        <h4>I have an account.<a href="Buyer_login.html">Login</a></h4>
+    </form>
+</body>
+</html>

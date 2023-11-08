@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion_Club</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Login.css">
+    <script src="Login.js" async></script>
+    <script src="Slide.js" async></script>
+</head>
+<body>
+    <div class="navbackground"></div>
+    <nav>
+       <a href="Home.html"><img src="lions-clubs-international-logo.svg" alt="invalid"></a>
+       <div class="search">
+         <img src="search.png" alt="invalid">
+         <input type="text" placeholder="search" maxlength="15">
+       </div>
+       <details>
+            <summary>About</summary>
+            <button>About us</button>
+            <button>pics</button>
+            <button>camping</button>
+       </details>
+      <a href="Donator_signup.html"><button name="donator" id="navbutton" class="navbutton_1">DONATE BLOOD</button></a>
+      <a href="Buyer_signup.html"><button name="buyer" id="navbutton" class="navbutton_2">LOOKING FOR BLOOD</button></a>
+
+      <button name="login" id="navbuttonlogin" class="navbutton_3">Login</button>
+
+      <div class="overlay" id="popupOverlay">
+        <div class="popup" id="popup">
+          <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">LOGIN AS</h2>
+          <a href="Donator_login.html"><button class="popup-button" id="button1">Donator</button></a>
+          <a href="Buyer_login.html"><button class="popup-button" id="button2">Buyer</button></a>
+          
+          <button id="closePopup"><img src="icons8-cross-50.png" alt=""></button>
+        </div>
+      </div>
+       <div id="unused div"></div>
+    </nav>
+    <article>
+      <div class="carousel">
+        <div class="slides">
+          <img src="blood-bank-1.jpg" alt="slide image" class="slide">
+          <img src="Blood-bank-2.jpg" alt="slide image" class="slide">
+          <img src="blood-bank-3.jpg" alt="slide image" class="slide">
+        </div>
+        <div class="controls">
+          <div class="control prev-slide">&#9668;</div>
+          <div class="control next-slide">&#9658;</div>
+        </div>
+      </div>
+    </article>
+</body>
+</html>
