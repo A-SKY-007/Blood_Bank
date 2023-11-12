@@ -9,16 +9,15 @@ nav{
     min-width: none;
     height: 70px;
     width: 1200px;
-    top: 60px;
-    left: 120px;
+    margin-top: -150px;
+    margin-left: 130px;
     background-color: rgb(80, 26, 26);
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: sticky;
     position: absolute;
-    z-index: 2;
+    z-index: 10;
 }
 nav img{
     height: 80px;
@@ -52,12 +51,14 @@ nav input{
     width: 150px;
     border-radius: 20px;
     border: none;
+    cursor: pointer;
 }
 #navbuttonlogin{
     height: 35px;
     width: 150px;
     border-radius: 20px;
     border: none;
+    cursor: pointer;
 }
 .navbutton_1{
     font-size: 17px;
@@ -107,7 +108,7 @@ details button{
 /*slide section*/
   
   .carousel {
-    width: 100vw;
+    width: 1519px;
     height: 500px; /* Replaced $carousel-height with the actual value */
     border-radius: 3px;
     overflow: hidden;
@@ -165,3 +166,547 @@ details button{
     }
   }
   
+/*after slide*/
+.why_we_should_donate{
+  display: flex;
+  background-color: rgb(172, 180, 180);
+  box-shadow: 0px 0px 5px rgb(82, 82, 82);
+}
+/*Blood pouch animation*/
+:root {
+  --carmine-pink: #ED563D;
+  --peach: #FFAEA3;
+  --isabelline: #EFEFEF;
+  --silver-chalice: #A6ADB7;
+  --outer-space: #474749;
+  --background: #FFFFFF;
+}
+.character {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 320px;
+  animation: wiggle 2s both ease-in-out infinite;
+  position: absolute;
+  top: 140px;
+  right: 180px;
+}
+
+.character>.handle {
+  width: 100px;
+  height: 40px;
+  background: var(--isabelline);
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+.character>.handle:before {
+  content: '';
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 25px;
+  background: var(--background);
+  width: 50px;
+  height: 15px;
+  border-radius: 13px;
+}
+
+.character>.handle>.round-corner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: var(--isabelline);
+  overflow: hidden;
+}
+
+.character>.handle>.round-corner:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin: -10px;
+  background: var(--background);
+  border-radius: 50%;
+}
+
+.character>.handle>.round-corner.left {
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+.character>.handle>.round-corner.right {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.character>.handle>.round-corner.right:before {
+  margin-left: 20px;
+}
+
+.character>.body {
+  position: absolute;
+  margin-top: 40px;
+  width: 260px;
+  height: 330px;
+  background: var(--isabelline);
+  border-radius: 50px;
+}
+
+.character>.body>.blood {
+  position: absolute;
+  width: 220px;
+  height: 290px;
+  margin: 20px;
+  background: var(--carmine-pink);
+  border-radius: 50px;
+}
+
+.character>.body>.blood>.shade {
+  position: absolute;
+  width: 60px;
+  height: 280px;
+  background: var(--peach);
+  border-radius: 50px 0 0 50px;
+  left: 20px;
+}
+
+.character>.body>.blood>.shade:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 280px;
+  border-radius: 50px;
+  background: var(--carmine-pink);
+  left: 15px;
+  top: 10px;
+}
+
+.character>.body>.blood>.shade:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--peach);
+  border-radius: 50%;
+  left: 53px;
+}
+
+.character>.body>.label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 120px;
+  background: white;
+  border-radius: 0 10px 10px 0;
+  top: 140px;
+  left: 20px;
+}
+
+.character>.body>.label>.line {
+  width: 120px;
+  height: 3px;
+  background: var(--silver-chalice);
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.character>.body>.label>.line.short {
+  width: 80px;
+}
+
+.character>.face {
+  position: absolute;
+  top: 70px;
+  left: 95px;
+  width: 70px;
+  height: 40px;
+}
+
+.character .eye_left {
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--outer-space);
+  animation: blink 2s both infinite;
+}
+.character .eye_right {
+  position: absolute;
+  top: 70px;
+  left: 150px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--outer-space);
+  animation: blink 2s both infinite;
+}
+.character .smile {
+  position: absolute;
+  top: 100px;
+  left: 119px;
+  width: 35px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.character .smile:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -20px;
+  width: 20px;
+  height: 24px;
+  border: 5px solid var(--outer-space);
+  border-radius: 50%;
+}
+
+@keyframes wiggle {
+  25% {
+    transform: rotate(4deg);
+  }
+  75% {
+    transform: rotate(-4deg);
+  }
+}
+
+@keyframes blink {
+  60% {
+    transform: scaleY(1);
+  }
+  70% {
+    transform: scaleY(.1);
+  }
+  80% {
+    transform: scaleY(1);
+  }
+}
+/*Blood Group distibution */
+
+#content {
+  position: relative;
+  margin-left: 500px;
+  margin-top: 30px;
+  width: 600px;
+  height: 600px;
+}
+#content>h4 {
+  position: absolute;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  top: 0px;
+  left: 10px;
+}
+#blood_selector {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 10px;
+  top: 45px;
+  z-index: 2;
+}
+#blood_selector div {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  border: 1px solid #b51e23;
+  border-radius: 25%;
+}
+#blood_selector div:hover {
+  border: 1px solid #1da1f2;
+  font-weight: bold;
+  cursor: pointer;
+}
+#blood_content {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 100%;
+}
+#center_via_c {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+#center_via_c .center_via {
+  width: 8px;
+  background: #ccc;
+  height: 200px;
+  position: absolute;
+  left: 304px;
+  top: 276px;
+}
+#center_via_c .blood_via {
+  height: 0;
+  background-color: #b51e23;
+  right: 50%;
+  width: 8px;
+  transition: height 0.25s;
+}
+.bar {
+  position: absolute;
+  right: -410px;
+  top: -40px;
+  width: 750px;
+  height: 8px;
+  border-radius: 2px 0 0 2px;
+  background-color: #ccc;
+}
+.main_bag {
+  position: absolute;
+  width: 100px;
+  height: 140px;
+  top: 70px;
+  left: 250px;
+  border-radius: 30px;
+  opacity: 0.8;
+  background-color: rgba(154, 207, 234, 0.9);
+  border: 8px solid rgba(154, 207, 234, 0.9);
+}
+.main_bag .blood {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #b51e23;
+  border-radius: 0 0 35px 35px;
+  transition: height 1s;
+}
+.main_bag .blood::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  width: 100%;
+  height: 10px;
+  background-color: #92191b;
+  border-radius: 100%;
+}
+.main_bag::before {
+  content: "";
+  position: absolute;
+  top: -118px;
+  left: 45%;
+  width: 10%;
+  height: 110px;
+  background-color: #ccc;
+}
+#humans {
+  position: absolute;
+  top: 276px;
+  width: 400px;
+  height: 200px;
+  left: 108px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+#humans .human {
+  position: relative;
+}
+#humans .human .via {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  height: 8px;
+  background-color: #ccc;
+  bottom: 0;
+}
+#humans .human .blood_via {
+  position: absolute;
+  height: 8px;
+  background-color: #b51e23;
+  width: 0;
+  bottom: 0;
+  transition: width 1s;
+}
+#humans .human.left {
+  display: grid;
+  justify-content: left;
+  align-content: center;
+}
+#humans .human.left .blood_via {
+  right: 0;
+}
+#humans .human.left .scribble {
+  left: -30px;
+}
+#humans .human.left .scribble span {
+  left: -40px;
+  text-align: right;
+}
+#humans .human.right {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+}
+#humans .human.right .scribble {
+  right: -60px;
+}
+#humans .human.right .scribble span {
+  right: -10px;
+}
+#humans .human .scribble {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 0;
+  transition: background 1s;
+}
+#humans .human .scribble span {
+  position: absolute;
+  display: grid;
+  align-items: end;
+  height: 100%;
+}
+#humans .human .scribble .head {
+  width: 30%;
+  height: 30%;
+  background-color: #666;
+  border-radius: 50%;
+  margin: 2px auto;
+  transition: background 1s;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+#humans .human .scribble .body {
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  height: 30%;
+  background-color: #666;
+  border-radius: 50% 50% 0 0;
+  margin: 0 auto;
+  transition: background 1s;
+}
+.no_transition {
+  transition: none !important;
+}
+.highlight {
+  border: 2px solid #b51e23 !important;
+  font-weight: bold;
+}
+.highlightText {
+  font-weight: bold;
+}
+@media only screen and (max-width: 400px) {
+  #content {
+    position: relative;
+    margin: 25px auto;
+    width: 300px;
+    height: 300px;
+  }
+  #content h3 {
+    top: 10px;
+    font-size: 1em;
+  }
+  #content #blood_selector {
+    width: 150px;
+    height: 75px;
+    font-size: 0.75em;
+    top: 45px;
+  }
+  #content .bar {
+    top: 40px;
+  }
+  #content .main_bag {
+    width: 75px;
+    height: 105px;
+    left: 125px;
+  }
+  #content .main_bag::before {
+    top: -108px;
+    height: 100px;
+  }
+  #content .main_bag .blood {
+    height: 70%;
+  }
+  #content #center_via_c .center_via {
+    left: 167px;
+    top: 240px;
+  }
+  #content #humans {
+    top: 240px;
+    width: 180px;
+    left: 85px;
+  }
+}
+.youtube{
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+}
+.youtube .div1{
+  margin-left: 30px;
+  margin-top: 30px;
+  transform: rotate(15deg);
+  height: 170px;
+  width: 450px;
+  border-radius: 10px;
+  background-color: #1da1f2;
+}
+.div1 h3{
+  padding-left: 50px;
+  font-family: 'Franklin Gothic Medium';
+}
+.youtube .div2{
+  margin-left: 30px;
+  margin-top: -55px;
+  transform: rotate(15deg);
+  height: 170px;
+  width: 450px;
+  border-radius: 10px;
+  background-color: #f2681d;
+}
+.div2 h3{
+  padding-left: 50px;
+  font-family: 'Franklin Gothic Medium';
+}
+.youtube .div3{
+  margin-left: 30px;
+  margin-top: -55px;
+  transform: rotate(15deg);
+  height: 200px;
+  width: 450px;
+  border-radius: 10px;
+  background-color: #5df21d;
+}
+.div3 h3{
+  padding-left: 50px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+
+/*Footer*/
+footer{
+  height: 200px;
+  width: auto;
+  background-color: rgb(35, 32, 32);
+  position: relative;
+}
+.about{
+  top: 31%;
+  left: 40px;
+  position: absolute;
+  height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.last_div{
+  height: 20px;
+  width: 1500px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
