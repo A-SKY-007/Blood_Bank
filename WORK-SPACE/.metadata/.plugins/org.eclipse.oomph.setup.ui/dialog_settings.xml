@@ -8,8 +8,11 @@
 		<section name="VariablePage">
 		</section>
 		<section name="ConfirmationPage">
+			<item key="mirrors" value="false"/>
 		</section>
 		<section name="ProgressPage">
+			<item key="restartIfNeeded" value="false"/>
+			<item key="dismissAutomatically" value="false"/>
 		</section>
 	</section>
 	<section name="org.eclipse.oomph.setup.ui.wizards.SetupWizard$Updater">
