@@ -8,7 +8,7 @@
 nav{
     min-width: none;
     height: 70px;
-    width: 1200px;
+    width: 77%;
     margin-top: -150px;
     margin-left: 130px;
     background-color: rgb(80, 26, 26);
@@ -101,7 +101,7 @@ details button{
 /*Artical section starts */
 .navbackground{
     height: 220px;
-    width: auto;
+    width: 100%;
     background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
     position: relative;
 }
@@ -709,4 +709,33 @@ footer{
   margin-top: 40px;
   display: flex;
   justify-content: space-evenly;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  nav {
+      justify-content: space-between;
+      height: auto;
+  }
+
+  nav img {
+      padding-left: 5px;
+      padding-top: 5px;
+  }
+
+  .search {
+      width: 20%;
+  }
+
+  .search img{
+    padding-top: 4px;
+    height: 5px;
+    width: 10px;
+  }
+
+  nav input {
+      width: 60%;
+  }
+
+  /* Add more styles for responsiveness */
 }
