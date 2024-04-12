@@ -5,7 +5,7 @@
     padding: 0px;
 }
 /*navigatin bar starts*/
-nav{
+.nav{
     min-width: none;
     height: 70px;
     width: 77%;
@@ -19,7 +19,7 @@ nav{
     position: absolute;
     z-index: 10;
 }
-nav img{
+.nav img{
     height: 80px;
     width: 80px;
     padding-left: 20px;
@@ -37,7 +37,7 @@ nav img{
     height: 25px;
     width: 40px;
 }
-nav input{
+.nav input{
     height: 30px;
     width: 340px;
     border: none;
@@ -78,7 +78,7 @@ nav input{
     color: black;
     font-size: 17px;
 }  
-nav details{
+.nav details{
     background-color: white;
     height: 30px;
     width: 80px;
